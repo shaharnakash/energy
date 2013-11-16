@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+  <meta name="keywords" content"חיסכון בחשמל, מנורות לד, כוסות קומפקטיות, מזוודה שימושית,">
+    <meta name="description" content"חיסכון בחשמל, מנורות לד, כוסות קומפקטיות, מזוודה שימושית,">
+
+  <title>s-e-e.co.il Calculatur - התייעלות כלכלית ברת-קיימא</title>
+  <link rel="stylesheet" type="text/css" href="css/screen_styles_pro.css" />
+  <link rel="stylesheet" type="text/css" href="css/screen_layout_large_pro.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="css/screen_layout_small.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="css/screen_layout_medium_pro.css" />
+  <link rel="stylesheet" type="text/css" media="only print" href="css/print.css">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  
+  <script type="text/javascript" src="js/my-clone-form-td2.js"></script>
+  <script type="text/javascript" src="js/totalcal.js"></script>
+
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+
+  <div class="page">
+<div class="PrintOnly">
+  <img id="PrintLogo" src="images/see_large.jpg"/>
+</div>
+   <header>
+
+    <a class="logo" href="#"></a>
+   </header>
+
+   <article>
+    <p id="bussniss">שם עסק:<input id="buss" type="text"></p>
+    <h1>מחשבון לחיסכון חשמל</h1>
+    <p>
+ SEE מחשבון זה מחשב את עלות צריכת החשמל הרגילה לעומת צריכה עם מוצרים של חברת 
+    </p>
+   </article>
+
+   <div class="promo_container">
+
+    <div class="promo left">
+     <div class="content">
+      <h3>נורות לד</h3>
+          <form action="#" method="post" id="sign-up_area">
+        <div id="entry1" class="clonedInput">
+         <h2 id="reference" name="reference" class="heading-reference">סוג נורה 1</h2>
+          <input style="width:80px;text-align:center;" class="input_lamp" type="text" name="ID1_lamp" id="ID1_lamp" value="סוג נורה">
+          <br />
+          <input style="width:80px;text-align:center;" class="input_watt" type="number" name="ID1_watt" id="ID1_watt" value="">
+          <label style="width:100px" class="label_watt" for="ID1_watt">:קילוווט</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_eleprice" type="number" name="ID1_eleprice" id="ID1_eleprice" >
+          <label style="width:100px" class="label_eleprice" for="ID1_eleprice2">:מחיר חשמל</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_hour" type="number" name="ID1_hour" id="ID1_hour" >          
+          <label style="width:100px" class="label_hour" for="ID1_hour">:שעות עבודה ביום</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_days" type="number" name="ID1_days" id="ID1_days" >       
+          <label style="width:100px" class="label_days" for="ID1_days">:ימי עבודה בחודש</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_time" type="number" name="ID1_time" id="ID1_time" value="">
+          <label style="width:100px" class="label_time" for="ID1_time">:אורך חיי נורה</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_count" type="number" name="ID1_count" id="ID1_count" value="">
+          <label style="width:100px" class="label_count" for="ID1_count">:מספר מנורות</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_price" type="number" name="ID1_price" id="ID1_price" value="" placeholder=""> 
+          <label style="width:100px" class="label_price" for="ID1_price"> :מחיר של נורה</label>
+        </div> <!-- end #entry1 -->
+
+         <input type="button" id="btnAdd" value="הוסף סוג נורה">
+         <input type="button" id="btnDel" value="מחק נורה אחרונה">
+         <input type="button" id="btnResult" value="חשב">
+     </form>
+     </div>
+     <div id="resultin"></div>
+     <div id="resultTotal1"></div>
+     <input type="button" id="btnResultTotalAB" value="החזר השקעה בחודשיים">
+     <div id="resultTotalABin"></div>
+
+
+
+
+    </div>
+
+     <div class="promo">
+      <div class="content">
+
+       <h3>נורות רגילות</h3>
+      <form action="#" method="post" id="sign-up_area2">
+        <div id="number1" class="clonedInput2">
+         <h2 id="reference2" name="reference2" class="heading-reference2">סוג נורה 1</h2>
+         <input style="width:80px;text-align:center;" class="input_lamp2" type="text" name="ID1_lamp2" id="ID1_lamp2" value="סוג נורה">
+         <br />
+          <input style="width:80px;text-align:center;" class="input_watt2" type="number" name="ID1_watt2" id="ID1_watt2" >
+          <label style="width:100px" class="label_watt2" for="ID1_watt2">:קילוווט</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_eleprice2" type="number" name="ID1_eleprice2" id="ID1_eleprice2" >
+          <label style="width:100px" class="label_eleprice2" for="ID1_eleprice2">:מחיר חשמל</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_hour2" type="number" name="ID1_hour2" id="ID1_hour2" >
+          <label style="width:100px" class="label_hour2" for="ID1_hour2">:שעות עבודה ביום</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_days2" type="number" name="ID1_days2" id="ID1_days2" >
+          <label style="width:100px" class="label_days2" for="ID1_days2">:ימי עבודה בחודש</label>
+          <br />
+         <input style="width:80px;text-align:center;" class="input_time2" type="number" name="ID1_time2" id="ID1_time2" value="">
+          <label style="width:100px" class="label_time2" for="ID1_time2">:אורך חיי נורה</label>
+          <br />
+          <input style="width:80px;text-align:center;" class="input_count2" type="number" name="ID1_count2" id="ID1_count2" value="">
+         <label style="width:100px" class="label_count2" for="ID1_count2">:מספר נורות</label>
+       <br />
+          <input style="width:80px;text-align:center;" class="input_price2" type="number" name="ID1_price2" id="ID1_price2" value="" placeholder="">
+          <label style="width:100px" class="label_price2" for="ID1_price2">:מחיר של נורה</label>
+        </div> <!-- end #entry1 -->
+
+         <input type="button" id="btnAdd2" value="הוסף סוג נורה">
+         <input type="button" id="btnDel2" value="מחק נורה אחרונה">
+         <input type="button" id="btnResult2" value="חשב">
+
+       </form>
+      </div>
+     <div id="resultin2"></div>
+     <div id="resultTotal2"></div>
+
+
+     </div>
+<div class="clear-fix"></div>
+</div>
+     <nav>
+
+   <a href="index.html"> בית</a>
+      <a href="about.html"> אודותינו</a>
+      <a href="value.html"> ערכי החברה</a>
+      <a href="index.html"> צור קשר</a>
+      <a style="float:right; margin-right:10px;" href="#" onclick="window.print();return false;"><img src="images/printButton.png"/></a>
+     </nav>
+
+     <footer>
+      Copyright &copy; 2013. Shahar Nakash - SEE LTD.
+
+     </footer>
+    
+    </div>
+ </body>
+</html>

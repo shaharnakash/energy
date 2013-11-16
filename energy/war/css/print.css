@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+
+nav *{
+ display: none !important;
+}
+header{
+ display: none !important;
+ 
+}
+.logo{
+  display: none !important;
+
+}
+#btnResultTotal{
+ display: none !important;
+}
+#btnResultTotal2{
+ display: none !important;
+
+}
+#btnResultTotalAB{
+ display: none !important;
+
+}
+#btnResult{
+  display: none !important;
+
+}
+#btnDel{
+  display: none !important;
+
+}
+#btnAdd{
+  display: none !important;
+
+}
+#btnResult2{
+  display: none !important;
+
+}
+#btnDel2{
+  display: none !important;
+
+}
+#btnAdd2{
+  display: none !important;
+
+}
+.content{
+   display: none !important;
+
+}
+article p{
+   display: none !important;
+
+}
+ #bussniss{
+   display: block !important;
+   font-size: 40px;
+
+}
+#buss{
+ font-size: 40px;
+ 
+}
+input{
+    outline: none;
+    border:none;
+}
+article h1{
+text-align:center;
+top:-1000px !important;
+}
+.PrintOnly { 
+     display:block;
+   }
+
+#resultin tr:nth-child(n+4) td
+{
+    display: none !important;
+
+}
+#resultTotal1 tr:nth-child(n+4) td
+{
+     display: none !important;
+
+}
+#resultin2 tr:nth-child(n+4) td
+{
+    display: none !important;
+
+}
+#resultTotal2 tr:nth-child(n+4) td
+{
+     display: none !important;
+     
+
+}
+td
+{
+ font-family: tahoma;
+    font-size: 21px;
+    width: 200px;
+    padding: 7px;
+    text-align: right;
+}
+tr:nth-child(even)
+{
+ background-color: #DCDCDC !important;;
+}
+tr:nth-child(odd)
+{
+ background-color: #F5F5DC !important;;
+}
+h1{
+ color: #000000;
+}
+#resultTotalABin td
+{
+ color:#A6430A;
+}

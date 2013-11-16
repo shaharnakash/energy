@@ -1,0 +1,618 @@
+/* CSS MD */ /*
+
+Shop e processo di acquisto
+
+Grigio scuro  txt		#707173			testi e titoli e paragrafi default 
+Grigio chiaro txt		#9a9a9c			testi e titoli e paragrafi secondari
+Grigio molto chiaro txt #CCCCCC			testi: briciole di pane
+Giallo MD		    	#ffdd00			un po ovunque
+
+Grigio sfondo			#f4f4f4 		sfondo sidebar
+Grigio bordi			#E1E1E1			bordi grigi
+Verde acqua				#086574			txt sconto checkout
+
+font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px;
+font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px;
+
+*/
+
+
+/* LISTING PRODOTTI e HP SHOP */
+#container.listing  {min-height: 500px;}
+#container.listing .header_shop { width:950px; margin:0; position:relative; z-index:0; margin:3px 0 10px 0; float:left; padding:0 0 5px 0; }
+#container.listing .header_shop h1 { float:left; display:inline; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:18px; }
+
+#container.listing .header_shop h1 img { float:left; display:inline; margin:4px 3px 0 0; }
+#container.listing .header_shop #breadcrumb { float:right; display:inline; width:550px;  color:#CCCCCC; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; text-align:right; }
+#container.listing .header_shop #breadcrumb a { color:#CCCCCC; }
+#container.listing .header_shop #breadcrumb span { color:#CCCCCC; }
+#container.listing .header_shop p { margin:10px 0 10px 0; color:#9a9a9c; float:left;  }
+
+.slider_hp_shop { width:100%; height:310px; background:#000000; margin:10px 0; }
+.slider_hp_shop .structure { width:950px; margin:0 auto; padding:0 0 0 0; }
+
+#container.listing #breadcrumb { float:left; display:inline; width:auto;  color:#5E5E5E; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; text-align:left; clear:both; border-bottom:2px solid #E1E1E1; padding-bottom:4px; padding-right:10px; margin-bottom:40px; }
+#container.listing #breadcrumb a { color:#5E5E5E; }
+#container.listing #breadcrumb span { color:#5E5E5E; }
+
+#container.listing .main .product_results { float:left; display:inline; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; color:#9a707173; width:50%; border-bottom:2px solid #E1E1E1; height:30px; line-height:30px; }
+
+
+#container.listing .main { float:right; display:inline; width:783px; position:relative; z-index:1; }
+#container.listing .main .order_by { float:right; display:inline; width:50%; *width:49.9%!important; border-bottom:2px solid #E1E1E1; height:30px; line-height:30px; }
+#container.listing .main .order_by a { float:right; display:inline; width:88px; height:23px; line-height:22px; background:url("labels.png") 0 -60px; text-align:center; margin:0 0 0 7px; }
+#container.listing .main .order_by a:hover { background:url("labels.png") 0 -160px; }
+#container.listing .main .order_by a:focus { background:url("labels.png") 0 -190px; color:#FFF; }
+#container.listing .main .order_by a:active { background:url("labels.png") 0 -190px; color:#FFF; }
+
+#container.listing .main .order_by a.selected_up { background:url("labels.png") 0 -293px; color:#FFF; }
+#container.listing .main .order_by a.selected_down { background:url("labels.png") 0 -318px; color:#FFF; }
+
+#container.listing .main .order_by span { float:right; display:inline; line-height:22px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; font-size:12px; color:#9a9a9c; margin-right:10px; }
+#container.listing .main .order_by select { float:right; display:inline; }
+#container.listing .main #breadcrumb { float:left; display:inline; line-height:22px; font-size:11px; width:170px;  }
+
+/* elenco prodotti */
+ul.listing_products { float:left; width:783px; display:inline; margin:35px 0 0 0; *margin:35px 0 45px 0!important; }
+ul.listing_products li { float:left; width:380px; display:inline; margin:0 0 45px 0; padding-bottom:35px; border-bottom:1px solid #E1E1E1; }
+ul.listing_products li.sx { padding-right:23px; }
+ul.listing_products li img.photo { width:190px; height:190px; float:left; display:inline; margin-bottom:10px; }
+ul.listing_products li p.title { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; float:left; width:180px; line-height:19px; min-height:38px; margin-left:10px; }
+ul.listing_products li p.code { font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; color:#9a9a9c; line-height:19px; float:left; display:inline; width:180px; margin-left:10px; }
+ul.listing_products li .stars { float:left; display:inline; height:30px; line-height:30px; width:180px; margin-left:10px; margin-top: 10px;}
+ul.listing_products li .features { float:left; display:inline; height:22px; line-height:22px; width:180px; margin:10px 0 0 10px; }
+ul.listing_products li .colors {  float:left; display:inline; height:40px; width:180px; margin:8px 0 0 10px; }
+ul.listing_products li .colors p { color:#9a9a9c; font-size:11px; float:left; display:inline; margin-bottom:4px; width:100%; }
+ul.listing_products li .colors .color { float:left; display:inline; width:25px; margin:0 6px 0 0; }
+ul.listing_products li .colors .color img.ico_color { float:left; display:block; margin:0 5px 6px 4px; clear:both; cursor:pointer; }
+ul.listing_products li .colors .color img.ico_new { float:left; display:inline; margin:0 0 2px 0; clear:both; }
+ul.listing_products li .colors .color div.discount { float:left; display:inline; margin:0; clear:both; color:#AC2C2B; font-size:9px; width:24px; }
+ul.listing_products li p.description { float:left; display:inline; clear:both; color:#9a9a9c; width:380px; margin:0 0 10px 0; height:35px; }
+ul.listing_products li .buy_product { float:left; display:inline; clear:both; width:380px;  }
+ul.listing_products li .price { float:left; display:inline; width:180px; margin:10px 0 0 10px; line-height:23px; font-size:14px; font-family:'AvantGardeGothicITCW01D 731075';   }
+ul.listing_products li .price p { color:#9a9a9c; font-size:11px; float:left; display:inline; margin-bottom:4px; width:100%; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom:0; }
+ul.listing_products li .price span { float:left; display:inline; margin-right:6px; }
+ul.listing_products li .price span.sale { text-decoration:line-through; }
+ul.listing_products li a.button_new { float:left; display:inline; width:140px; height:23px; line-height:22px; margin:0; text-align:center; font-size:11px; background:url("labels.png") 0 -400px no-repeat;  }
+ul.listing_products li a.button_new2 { float:left; display:inline; width:140px; height:23px; line-height:22px; margin:0; text-align:center; font-size:11px; background:url("labels.png") 0 -1000px no-repeat; margin-right:60px; }
+p.not_available { float:left; display:inline; width:100%; height:23px; line-height:22px; margin:0; text-align:left; font-size:12px; color:red; font-family:'AvantGardeGothicITCW01D 731075';  }
+
+ul.listing_products li p.not_available { width:200px;  }
+
+
+ul.listing_products li .price .discount { float:left; display:inline; width:40px; height:21px; line-height:21px; margin-top:1px; background:url("labels.png") -94px -61px no-repeat; margin-right:5px; color:#FFF; text-align:center; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; }
+
+ul.listing_products li a.button { float:left; display:inline; width:104px; height:23px; line-height:22px; margin:0; text-align:center; font-size:11px; background:url("labels.png") 0 -108px no-repeat;  }
+ul.listing_products li a.button:hover { background:url("labels.png") 0 -947px no-repeat; }
+ul.listing_products li a.button:focus { background:url("labels.png") 0 -975px no-repeat; }
+ul.listing_products li a.button:active { background:url("labels.png") 0 -975px no-repeat; }
+ul.listing_products li .price span.barrato { text-decoration:line-through; }
+ul.listing_products li .price span.scontato { color:#B20000; }
+  
+
+#container.listing .pagination { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; width:783px; display:inline; float:left; margin:5px 0 30px 0; color:#9a9a9c; clear:both;  }
+#container.listing .pagination .page_n { float:left; display:inline; width:283px; }
+#container.listing .pagination .pages { float:right; display:inline; width:500px; text-align:right; }
+#container.listing .pagination .pages a { display:inline-block; color:#9a9a9c; }
+#container.listing .pagination .pages a.selected { color:#707173; }
+/*
+#container.listing .banners { float:left; display:inline; clear:both; margin:0 0 20px 0; width:767px; background:url("bg_banner_listing2.jpg") no-repeat; height:72px; padding:7px 8px; }
+#container.listing .banners img { float:left; display:inline; }
+*/
+
+#container.listing .pagination a.view_all { display:inline-block; margin:0 0 0 10px; }
+
+.banner_list { width:767px; height:72px; float:left; display:inline; padding:7px 8px; margin:10px 0 0 0; background:url("bg_banner_listing2.jpg") no-repeat 0 0; }
+.banner_list .item { width:245px; height:52px; float:left; display:inline; padding:0; margin:20px 0 0 10px; }
+.banner_list .item:first-child { border:0; }
+.banner_list .item img { float:left; width:35px; display:inline; margin:0 5px 20px 0; }
+.banner_list .item img.verisign  { float:left; width:52px; display:inline; margin:0 5px 20px 0; }
+.banner_list .item p.title { float:right; width:205px; display:inline; text-align:left; margin:0 0 3px 0; font-family:'AvantGardeGothicITCW01D 731075'; font-size:13px; line-height:14px; }
+.banner_list .item p.description { float:right; width:205px; display:inline; text-align:left; margin:0; font-size:12px; color:#9a9a9c; }
+.banner_list .item p.verisign { font-size:14px; margin:7px 0 0 0; width:188px; }
+
+.banner_list.hpshop { margin:20px 83px 40px 83px; }
+
+
+
+
+
+/* Sidebar listing */
+#container.listing .sidebar { float:left; display:inline; width:150px; background:#f4f4f4; padding:0 0 15px 0; position:relative; z-index:1; }
+#container.listing .sidebar .title_sidebar { float:left; display:inline; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; color:#9a707173; width:150px; border-bottom:2px solid #E1E1E1; height:30px; line-height:30px; margin-bottom:10px; }
+
+#container.listing .sidebar .extra_side_top { position:absolute; top:0; left:0; height:10px; width:150px; background:url("background.png") 0 -50px no-repeat; }
+#container.listing .sidebar .extra_side_bottom { position:absolute; bottom:0; left:0; height:9px; width:150px; background:url("background.png") 0 -85px no-repeat; }
+#container.listing .sidebar a.back { font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; float:left; width:130px; padding:0 10px; color:#9a9a9c; line-height:18px; margin-bottom:5px; }
+#container.listing .sidebar a.back_to { float:left; display:inline; width:88px; height:24px; background:url("labels.png") 0 -132px no-repeat; padding:0 10px 0 30px;  line-height:24px; margin:5px 10px 10px 10px; }
+
+#container.listing .sidebar label { float:left; display:inline; width:150px; line-height:39px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; background:url("background.png") 0 -98px no-repeat; color:#9a9a9c; cursor:pointer; }
+#container.listing .sidebar label:hover { color:#707173; }
+#container.listing .sidebar label.close { background:url("background.png") 0 -141px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar label .title { width:105px; line-height:39px; padding:0 10px 0 30px; float:left; display:inline; height:39px; }
+#container.listing .sidebar label .title.tags { background:url("shop.png") 9px 0 no-repeat;  }
+#container.listing .sidebar label.close .title.tags { background:url("shop.png") 9px -4px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar label .title.categories { background:url("shop.png") 9px -39px no-repeat;  }
+#container.listing .sidebar label.close .title.categories { background:url("shop.png") 9px -43px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar label .title.materials{ background:url("shop.png") 9px -78px no-repeat;  }
+#container.listing .sidebar label.close .title.materials{ background:url("shop.png") 9px -82px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar label .title.prices { background:url("shop.png") 9px -117px no-repeat;  }
+#container.listing .sidebar label.close .title.prices { background:url("shop.png") 9px -121px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar label .title.colors { background:url("shop.png") 9px -156px no-repeat;  }
+#container.listing .sidebar label.close .title.colors { background:url("shop.png") 9px -160px no-repeat;  height:30px; line-height:30px; }
+#container.listing .sidebar label .title.portability { background:url("shop.png") 9px -199px no-repeat;  }
+#container.listing .sidebar label.close .title.portability { background:url("shop.png") 9px -199px no-repeat; height:30px; line-height:30px; }
+#container.listing .sidebar ul.filters { float:left; display:inline; width:130px; margin:5px 0 15px 10px; }
+#container.listing .sidebar ul.filters li { float:left; display:inline; width:130px; margin:0 0 2px 0; height:23px; line-height:23px; }
+#container.listing .sidebar ul.filters li a { float:left; display:inline; width:110px; height:23px; line-height:23px; background:url("labels.png") 0 -741px no-repeat; padding:0 10px; }
+#container.listing .sidebar ul.filters li a:hover {  background:url("labels.png") 0 -767px no-repeat; }
+#container.listing .sidebar ul.filters li a:focus {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+#container.listing .sidebar ul.filters li a:active {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+
+#container.listing .sidebar ul.filters li.colore { float:left; display:inline; width:20px; margin:0 3px 5px 0; height:20px; line-height:20px; }
+#container.listing .sidebar ul.filters li.colore a { float:left; display:inline; width:20px; height:20px; line-height:20px; background:none; padding:0; }
+#container.listing .sidebar ul.filters li.colore a:hover {  background:none; }
+#container.listing .sidebar ul.filters li.colore a:focus {  background:none; }
+#container.listing .sidebar ul.filters li.colore a:active {  background:none; }
+#container.listing .sidebar ul.filters li.colore.selected a { background:none; }
+#container.listing .sidebar ul.filters li.colore.disabled  a{ background:none; }
+
+#container.listing .sidebar ul.filters li.disabled { display:none;}
+#container.listing .sidebar ul.filters li.selected a { background:url("labels.png") 0 -849px no-repeat; color:#FFF; }
+#container.listing .sidebar ul.filters li.disabled a { background:url("labels.png") 0 -821px no-repeat; color:#9a9a9c; }
+/*slider prezzo*/
+#container.listing .sidebar input#min { background:none; border:none; float:left; margin:5px 0 0 10px; width:50px; font-family:'AvantGardeGothicITCW01D 731075'; }
+#container.listing .sidebar input#max { background:none; border:none; float:right; margin:5px 10px 0 0; width:50px; text-align:right; font-family:'AvantGardeGothicITCW01D 731075'; }
+#container.listing .sidebar .price_slider { width:115px; float:left; display:inline; margin:10px 0 0 15px; } 
+
+
+#container.listing .sidebar ul.filters_new { float:left; display:inline; width:150px; margin:0 0 40px 0; }
+#container.listing .sidebar ul.filters_new li { float:left; display:inline; width:150px; margin:0 0 2px 0; height:23px; line-height:23px; }
+#container.listing .sidebar ul.filters_new li a { float:left; display:inline; width:138px; height:23px; line-height:23px; color:#99999A; font-family:'AvantGardeGothicITCW01D 731075'; background:url("arrownew.png") 4px 5px no-repeat; padding-left:12px; }
+#container.listing .sidebar ul.filters_new li.selected a { color:#FFF;  background:url("arrownew2.png") 4px 5px no-repeat #707173;  }
+#container.listing .sidebar ul.filters_new li a:hover { color:#FFF;  background:url("arrownew2.png") 4px 5px no-repeat #707173;  }
+#container.listing .sidebar ul.filters_new li a:focus {  color:#FFF;  background:url("arrownew2.png") 4px 5px no-repeat #707173;   }
+#container.listing .sidebar ul.filters_new li a:active { color:#FFF;  background:url("arrownew2.png") 4px 5px no-repeat #707173;  }
+
+#container.listing .sidebar ul.filters_new li.figlio { float:left; display:inline; width:150px; margin:0 0 0 0; }
+#container.listing .sidebar ul.filters_new li.figlio a { float:left; display:inline; width:132px; height:23px; line-height:23px; color:#707173; font-family:'AvantGardeGothicITCW01D 731075'; background:url("arrownew.png") 10px 5px no-repeat; padding-left:18px; font-size:11px; }
+#container.listing .sidebar ul.filters_new li.figlio.selected a { float:left; display:inline; width:132px; height:23px; line-height:23px; color:#FFF; font-family:'AvantGardeGothicITCW01D 731075'; background:url("arrownew2.png") 10px 5px no-repeat #99999A; padding-left:18px; font-size:11px; }
+#container.listing .sidebar ul.filters_new li.figlio a:hover { color:#FFF;  background:url("arrownew2.png") 10px 5px no-repeat #99999A;  }
+
+
+
+/* SCHEDA PRODOTTO */
+/*sidebar*/
+#container.product .sidebar { float:left; display:inline; width:950px; background:#fff; padding:40px 0 15px 0; position:relative; z-index:1; }
+#container.product .sidebar .line { float:left; display:inline; width:500px; margin:0 15px 20px 0; padding:0 0 12px 0; }
+#container.product .sidebar .line img { float:left; display:inline; margin:0; width:210px; }
+#container.product .sidebar .line h2 { font-family:'AvantGardeGothicITCW01M 731087'; font-size:20px; float:right; text-align:left; display:inline; width:270px; }
+#container.product .sidebar .line h5 { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; float:right; text-align:left; display:inline; width:270px; }
+
+#container.product .sidebar .line p { float:right; text-align:left; display:inline; width:270px; margin-top:10px; }
+#container.product .sidebar .line a.button { float:left; display:inline; width:75px; height:23px; margin:5px 0; background:url("labels.png") 0 -621px no-repeat; line-height:20px; color:#FFF; padding:0 0 0 15px; font-size:12px; margin:20px 0 0 20px; }
+#container.product .sidebar .line a.button:hover { background:url("labels.png") 0 -650px no-repeat; }
+#container.product .sidebar .line a.button:focus { background:url("labels.png") 0 -679px no-repeat; }
+#container.product .sidebar .line a.button:active{ background:url("labels.png") 0 -679px no-repeat; }
+
+
+
+#container.product .sidebar .designer { float:right; text-align:left; display:inline; width:415px; margin:0 0 20px 0; padding:0 0 12px 0;}
+#container.product .sidebar .designer img { float:left; display:inline; margin:10px 0; clear:both; }
+#container.product .sidebar .designer h3 { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; float:left; display:inline; width:330px; margin:10px 0 0 15px; }  
+#container.product .sidebar .designer h4 { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; float:left; display:inline; width:100%;  }
+
+#container.product .sidebar .designer p { float:left; display:inline; width:330px; margin:10px 0 10px 15px; }
+#container.product .sidebar .designer a.button { float:right; display:inline; width:75px; height:23px; margin:5px 0; background:url("labels.png") 0 -621px no-repeat; line-height:20px; color:#FFF; padding:0 0 0 15px; font-size:12px; }
+#container.product .sidebar .designer a.button:hover { background:url("labels.png") 0 -650px no-repeat; }
+#container.product .sidebar .designer a.button:focus { background:url("labels.png") 0 -679px no-repeat; }
+#container.product .sidebar .designer a.button:active { background:url("labels.png") 0 -679px no-repeat; }
+
+#container.product .sidebar p.title_scehda_bottom { float:left; display:inline; width:100%;  padding-bottom:4px; border-bottom:1px solid #E1E1E1; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#707173; font-weight:bold; margin:30px 0 20px 0; }
+
+#container.product .sidebar .also_like { float:left; display:inline; width:500px; overflow:hidden; margin:0 0 20px 0; padding:0 0 12px 0; border-bottom:1px solid #E1E1E1; }
+#container.product .sidebar .also_like a.arrow_sx { float:left; display:inline; line-height:24px; height:24px; width:24px; background:url("shop.png") 0 -251px no-repeat; }
+#container.product .sidebar .also_like a.arrow_dx { float:left; display:inline; line-height:24px; height:24px; width:24px; background:url("shop.png") 0 -276px no-repeat; }
+#container.product .sidebar .also_like p.title { float:left; display:inline; line-height:24px; height:24px; text-align:center; width:162px; margin:0 0 20px 0; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; }
+#container.product .sidebar .also_like ul { float:left; display:inline; width:1000px; }
+#container.product .sidebar .also_like ul li { float:left; display:inline; width:90px; margin:0 0 0 15px; }
+#container.product .sidebar .also_like ul li img { float:left; display:inline; width:90px; margin:0 0 5px 0; }
+#container.product .sidebar .also_like ul li p { float:left; display:inline; width:90px; margin:0; text-align:center; }
+
+#container.product .sidebar .recently_viewed { float:right; text-align:left; display:inline; width:415px; overflow:hidden; margin:0 0 20px 0; padding:0 0 12px 0; border-bottom:1px solid #E1E1E1; }
+#container.product .sidebar .recently_viewed a.arrow_sx { float:left; display:inline; line-height:24px; height:24px; width:24px; background:url("shop.png") 0 -251px no-repeat; }
+#container.product .sidebar .recently_viewed a.arrow_dx { float:left; display:inline; line-height:24px; height:24px; width:24px; background:url("shop.png") 0 -276px no-repeat; }
+#container.product .sidebar .recently_viewed p.title { float:left; display:inline; line-height:24px; height:24px; text-align:center; width:162px; margin:0 0 20px 0; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; }
+#container.product .sidebar .recently_viewed ul { float:left; display:inline; width:1000px; }
+#container.product .sidebar .recently_viewed ul li { float:left; display:inline; width:90px; margin:0 0 0 15px; }
+#container.product .sidebar .recently_viewed ul li img { float:left; display:inline; width:90px; margin:0 0 5px 0; }
+#container.product .sidebar .recently_viewed ul li p { float:left; display:inline; width:90px; margin:0; text-align:center; }
+
+/* main */
+#container.product .main { float:left; display:inline; width:950px; background:#fff; padding:0 0 0 0; position:relative; z-index:1; }
+#container.product .main .header_shop_product { width:710px; margin:0; position:relative; z-index:0; margin:3px 0 10px 0; float:left; }
+#container.product .main .header_shop_product .headersmall { float:left; display:inline; width:710px; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; border-bottom:1px solid #E1E1E1; padding:0 0 5px 0; }
+#container.product .main .header_shop_product .headersmall img { float:left; display:inline; margin:0 3px 0 0; }
+#container.product .main .header_shop_product #breadcrumb { float:left; display:inline; width:100%; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; text-align:left; margin:5px 0 0 0;  }
+#container.product .main .header_shop_product #breadcrumb a { }
+#container.product .main .header_shop_product #breadcrumb span { }
+
+#container.product .main .product_details { float:left; display:inline; margin:12px 0 12px 0; padding:0 0 12px 0; border-bottom:1px solid #E1E1E1; clear:both; width:950px;  }
+#container.product .main .product_details .photo { float:left; display:inline; width:500px; }
+#container.product .main .product_details .photo .main_photo { float:left; display:inline; width:500px; height:500px; margin:0 0 5px 0; }
+#container.product .main .product_details .photo .photo_mini { float:left; display:inline; width:500px; height:150px; margin:20px 0 5px 0; border-top:1px solid #E1E1E1 ; padding-top:15px; }
+#container.product .main .product_details .photo .photo_mini img { float:left; display:inline; margin:0 0 0 0; }
+
+#container.product .main .product_details .information { text-align:left; float:right; display:inline; width:415px; padding-left:15px; border-left:1px solid #E1E1E1; }
+#container.product .main .product_details .information .code { float:left; display:inline; width:340px; font-family:'AvantGardeGothicITCW01M 731087'; color:#9a9a9c; font-size:12px; }
+#container.product .main .product_details .information h1 { float:left; display:inline; width:340px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:23px; }
+#container.product .main .product_details .information .ideal_for { float:left; display:inline; width:340px; margin:10px 0; }
+#container.product .main .product_details .information .ideal_for p { float:left; display:inline; width:340px; margin:0 0 5px 0; color:#9a9a9c; }
+
+#container.product .main .product_details .information .colors {  float:left; display:inline; width:415px; margin:0 0 10px 0; }
+#container.product .main .product_details .information .colors p {  float:left; display:inline; width:415px; margin:0 0 5px 0; color:#9a9a9c; }
+#container.product .main .product_details .information .colors .color { float:left; display:inline; width:25px; margin:0 6px 0 0; }
+#container.product .main .product_details .information .colors .color img.ico_color { float:left; display:block; margin:0 5px 6px 4px; clear:both; }
+#container.product .main .product_details .information .colors .color img.ico_new { float:left; display:inline; margin:0 0 2px 0; clear:both; }
+#container.product .main .product_details .information .colors .color div.discount { float:left; display:inline; margin:0; clear:both; color:#AC2C2B; font-size:10px; width:24px; }
+
+#container.product .main .product_details .information .quantity {  float:left; display:inline; width:415px; margin:0; }
+#container.product .main .product_details .information .quantity p {  float:left; display:inline; width:415px; margin:0 0 5px 0; color:#9a9a9c; }
+#container.product .main .product_details .information .quantity a.more { float:left; display:inline; width:22px; height:22px; background:url("shop.png") 0 -331px no-repeat; }
+#container.product .main .product_details .information .quantity a.more:hover { background:url("shop.png") -25px -331px no-repeat; }
+#container.product .main .product_details .information .quantity a.less { float:left; display:inline; width:22px; height:22px; background:url("shop.png") 0 -354px no-repeat; }
+#container.product .main .product_details .information .quantity a.less:hover { background:url("shop.png") -25px -354px no-repeat; }
+#container.product .main .product_details .information .quantity span { float:left; display:inline; padding:0 10px; line-height:22px; font-weight:bold; }
+#container.product .main .product_details .information .price { float:right; text-align:right; display:inline; width:100%; margin:0 0 8px 0; font-size:20px; font-family:'AvantGardeGothicITCW01D 731075';   }
+#container.product .main .product_details .information .price span { float:right; display:inline; margin-right:6px; }
+#container.product .main .product_details .information .price span.sale { text-decoration:line-through; }
+#container.product .main .product_details .information .price .discount { float:left; display:inline; width:40px; height:21px; line-height:21px; margin-top:1px; background:url("labels.png") -94px -61px no-repeat; margin:20px 10px 0 5px; color:#FFF; text-align:center; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;  }
+#container.product .main .product_details .information .price span.prezzo_scontato { color:#B20000; }
+
+
+
+
+
+
+
+#container.product .main .product_details .information .cta { float:right; display:inline; width:242px; height:38px; background:url("background.png") 0 -180px; text-align:center; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; line-height:38px;
+text-shadow: 0px 1px 0px #fff8d5;  }
+#container.product .main .product_details .information .cta:hover { background:url("background.png") 0 -530px; }
+#container.product .main .product_details .information .cta:focus { background:url("background.png") 0 -570px; }
+#container.product .main .product_details .information .cta:active { background:url("background.png") 0 -570px; }
+
+
+#container.product .main .product_details .information .social { float:left; display:inline; margin:20px 0 0 0; width:415px; height:50px;
+border-top:1px solid #E1E1E1;  }
+#container.product .main .product_details .information .social div { float:left; display:inline; border:0; }
+#container.product .main .product_details .information .social .send_friend { float:left; display:inline; width:140px; margin-top:3px; }
+#container.product .main .product_details .information .social .send_friend p { float:left; display:inline; width:140px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#9a9a9c; margin:0 0 5px 0; }
+#container.product .main .product_details .information .social .send_friend a { float:left; display:inline; padding:0 0 0 30px; background:url("shop.png") 0 -383px no-repeat; line-height:14px;  text-decoration:underline;}
+
+#container.product .main .product_details .information .features { float:left; display:inline; width:415px; padding-top:15px; margin-top:15px; border-top:1px solid #E1E1E1; }
+#container.product .main .product_details .information .features p.title { float:left; display:inline; width:415px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; margin:0 0 30px 0; }
+#container.product .main .product_details .information .features ul {  float:left; display:inline; width:415px; }
+#container.product .main .product_details .information .features ul li {  float:left; display:inline; width:385px; margin:0 0 16px 0; padding:0 0 0 30px; }
+#container.product .main .product_details .information .features ul li.size {  background:url("shop.png") 0 -451px no-repeat; }
+#container.product .main .product_details .information .features ul li.weight {  background:url("shop.png") 0 -485px no-repeat; }
+#container.product .main .product_details .information .features ul li.capacity {  background:url("shop.png") 0 -527px no-repeat; }
+#container.product .main .product_details .information .features ul li.composition {  background:url("shop.png") 0 -565px no-repeat; }
+
+
+#container.product .main .actions { float:left; display:inline; width:710px; padding:0 0 10px 0; border-bottom:1px solid #E1E1E1; }
+#container.product .main .actions .rate { float:left; display:inline; width:185px; }
+#container.product .main .actions .rate p { float:left; display:inline; width:185px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#9a9a9c; margin:0 0 5px 0; }
+#container.product .main .actions .rate img { float:left; display:inline;  }
+#container.product .main .actions .click_to_rate { float:left; display:inline; width:185px; }
+#container.product .main .actions .click_to_rate p { float:left; display:inline; width:185px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#9a9a9c; margin:0 0 5px 0; }
+#container.product .main .actions .click_to_rate img { float:left; display:inline;  }
+
+
+
+#container.product .main .information .description_details { float:left; display:inline; width:100%; clear:both; margin:10px 0; padding-bottom:10px; border-bottom:1px solid #E1E1E1; }
+#container.product .main .information .description_details p { float:left; display:inline; width:100%; clear:both;  font-family:'AvantGardeGothicITCW01M 731087'; color:#9a9a9c; font-size:12px; }
+#container.product .main .information .free_ship { float:left; display:inline; width:390px; margin:30px 0 0 0; padding:0 0 0 25px; background:url("check.png") 0 0 no-repeat; }
+
+#container.product .main .description {  float:left; display:inline; width:710px; padding:20px 0; border-bottom:1px solid #E1E1E1; }
+#container.product .main .description .description_details { float:left; display:inline; width:370px; }
+#container.product .main .description .description_details p.title { float:left; display:inline; width:370px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; margin:0 0 30px 0; }
+#container.product .main .description .description_details ul { float:left; display:inline; width:360px; color:#9a9a9c; }
+#container.product .main .description .description_details ul li { float:left; display:inline; width:353px; color:#9a9a9c; margin:0 0 3px 0; background:url("shop.png") 0 -398px no-repeat; padding:0 0 0 7px; }
+
+/* review */
+#container.product .main .review { width:710px; float:left; display:inline; margin:30px 0;  }
+#container.product .main .review .title { width:670px; float:left; display:inline; margin:0 0 20px 0; padding:0 0 0 40px; background:url("shop.png") 0 -800px no-repeat #FFF; height:35px; }
+#container.product .main .review .title p { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; float:left; width:670px; margin-bottom:
+2px; }
+#container.product .main .review .title span  { font-size:11px; color:#9a9a9c; }
+#container.product .main .review .items_review { float:left; display:inline; width:710px; margin:0 0 15px 0; padding:0 0 15px 0; border-bottom:1px solid #E1E1E1; }
+#container.product .main .review .item_review { float:left; display:inline; width:710px; margin:0 0 15px 0; }
+#container.product .main .review .item_review span.name { float:left; display:inline; width:695px; font-size:13px; color:#9a9a9c; line-height:13px; padding:0 0 0 15px; background:url("shop.png") 0 -862px no-repeat #FFF; font-weight:bold; }
+#container.product .main .review .item_review .stars { float:left; display:block; margin:8px 0; }
+#container.product .main .review .item_review p { background:#f4f4f4; float:left; width:670px; padding:20px; font-size:11px;
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  }
+/* risposta customer care MD */
+#container.product .main .review .item_review_md { float:left; display:inline; width:690px; margin:0 0 30px 20px; }
+#container.product .main .review .item_review_md span.name { float:left; display:inline; width:670px; font-size:13px; color:#9a9a9c; line-height:15px; padding:0 0 0 20px; background:url("shop.png") 0 -922px no-repeat #FFF; font-weight:bold; margin-bottom:5px; }
+#container.product .main .review .item_review_md p { background:#E1E1E1; float:left; width:650px; padding:20px; font-size:11px;
+-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  }
+
+
+#container.product .main .review a.button { float:left; display:inline; width:240px; height:23px; background:url("background.png") 0 -620px no-repeat; padding:0 6px 0 4px;font-size:11px; line-height:21px; text-align:center; }
+#container.product .main .review a.button:hover { background:url("background.png") 0 -649px no-repeat;  }
+#container.product .main .review a.button:focus { background:url("background.png") 0 -679px no-repeat; color:#FFF; }
+#container.product .main .review a.button:active { background:url("background.png") 0 -679px no-repeat; color:#FFF;  }
+
+#container.product .main .review .pagination { font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; width:710px; display:inline; float:left; margin:0 0 30px 0; color:#9a9a9c; clear:both;  }
+#container.product .main .review .pagination .page_n { float:left; display:inline; width:200px; }
+#container.product .main .review .pagination .pages { float:right; display:inline; width:510px; text-align:right; }
+#container.product .main .review .pagination .pages a { display:inline-block; color:#9a9a9c; }
+#container.product .main .review .pagination .pages a.selected { color:#707173; }
+
+
+
+
+/* SHOPPING BAG */
+#container.shoppingbag .main { float:left; display:inline; width:710px; background:#fff; padding:0 14px 100px 0; position:relative; z-index:1; border-right:1px solid #E1E1E1; }
+#container.shoppingbag .main h1 { float:left; display:inline; width:450px; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px;
+ margin:3px 0 20px 0; }
+#container.shoppingbag .main h1 img { float:left; display:inline; margin:0 3px 0 0; }
+#container.shoppingbag .main .continue { float:right; width:195px; height:23px; background:url("background.png") 0 -715px no-repeat; padding:0 0 0 5px;font-size:12px; }
+#container.shoppingbag .main .continue a { float:left; width:187px; height:23px; background:url("iconsdx.png") right -21px no-repeat; line-height:21px; padding:0 0 0 8px; }
+#container.shoppingbag .main .continue:hover { background:url("background.png") 0 -744px no-repeat; }
+#container.shoppingbag .main .continue:focus { background:url("background.png") 0 -774px no-repeat; color:#FFF; }
+#container.shoppingbag .main .continue:focus a { color:#FFF; }
+#container.shoppingbag .main .continue:active { background:url("background.png") 0 -774px no-repeat; color:#FFF; }
+#container.shoppingbag .main .continue:active a { color:#FFF; }
+
+
+#container.shoppingbag .main table { float:left; display:inline; margin:0 0 20px 0; }
+#container.shoppingbag .main table th { height:30px; border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1; color:#9a9a9c; font-size:13px; font-weight:bold; }
+
+#container.shoppingbag .main table td { border-bottom:1px solid #E1E1E1; }
+#container.shoppingbag .main table tr.free_gift td { border-bottom:2px solid #ffdd00; border-top:2px solid #ffdd00; }
+#container.shoppingbag .main table tr.free_gift td:first-child { border-left:2px solid #ffdd00; }
+#container.shoppingbag .main table tr.free_gift td.last { border-right:2px solid #ffdd00; }
+#container.shoppingbag .main table td a.del { float:left; display:inline; width:22px; height:22px; background:url("shop.png") 0 -890px no-repeat; }
+#container.shoppingbag .main table td a.del:hover { background:url("shop.png") -25px -890px no-repeat; }
+#container.shoppingbag .main table td.item_product img { float:left; display:inline; }
+#container.shoppingbag .main table td.item_product span.title { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; line-height:19px; min-height:38px; float:left; display:inline; width:140px; }
+#container.shoppingbag .main table td.item_product span.code { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#9a9a9c; line-height:19px; float:left; display:inline; width:140px; }
+#container.shoppingbag .main table td.qty { font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; }
+#container.shoppingbag .main table td.qty span { float:left; display:inline; line-height:22px; margin:0 5px; }
+#container.shoppingbag .main table td.qty a.more { float:left; display:inline; width:22px; height:22px; background:url("shop.png") 0 -331px no-repeat; }
+#container.shoppingbag .main table td.qty a.more:hover { background:url("shop.png") -25px -331px no-repeat; }
+#container.shoppingbag .main table td.qty a.less { float:left; display:inline; width:22px; height:22px; background:url("shop.png") 0 -354px no-repeat; }
+#container.shoppingbag .main table td.qty a.less:hover { background:url("shop.png") -25px -354px no-repeat; }
+#container.shoppingbag .main table td .price { float:left; display:inline; width:190px; margin:0; line-height:23px; font-size:14px; font-family:'AvantGardeGothicITCW01D 731075'; text-align:center; }
+#container.shoppingbag .main table td .price span { float:left; display:inline; margin-right:6px; }
+#container.shoppingbag .main table td .price span.sale { text-decoration:line-through; }
+#container.shoppingbag .main table td .discount { float:left; display:inline; width:40px; height:21px; line-height:21px; margin-top:1px; background:url("labels.png") -94px -61px no-repeat; margin-right:5px; color:#FFF; text-align:center; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;  }
+
+
+#container.shoppingbag .main table tr.total_shopping_bag td { height:60px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; }
+#container.shoppingbag .main table tr.type_shipment { height:40px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; }
+#container.shoppingbag .main table tr.choose_shipment td { height:60px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; color:#9a9a9c; }
+#container.shoppingbag .main table tr.choose_shipment td span { float:left; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px;
+ }
+#container.shoppingbag .main table tr.choose_shipment.selected td { color:#707173; }
+#container.shoppingbag .main table tr.choose_shipment td a.radio { height:15px; width:15px; background:url("radio.png") 0 -187px no-repeat; float:left; margin:10px 10px 0 0; }
+#container.shoppingbag .main table tr.choose_shipment td a.radio:hover { background:url("radio.png") 0 -150px no-repeat;  }
+#container.shoppingbag .main table tr.choose_shipment td a.radio.selected { background:url("radio.png") 0 -169px no-repeat;  }
+
+
+#container.shoppingbag .main a.cta { float:right; display:inline; width:242px; height:38px; background:url("background.png") 0 -180px; text-align:center; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; line-height:38px;
+text-shadow: 0px 1px 0px #fff8d5;  }
+#container.shoppingbag .main a.cta:hover { background:url("background.png") 0 -530px; }
+#container.shoppingbag .main a.cta:focus { background:url("background.png") 0 -570px; }
+#container.shoppingbag .main a.cta:active { background:url("background.png") 0 -570px; }
+
+/* sidebar shopping bag */
+#container.shoppingbag .sidebar { float:right; display:inline; width:210px; background:#fff; padding:0 0 15px 0; position:relative; z-index:1; }
+#container.shoppingbag .sidebar h2 { float:left; display:inline; width:210px; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px;
+  margin:3px 0 20px 0; }
+#container.shoppingbag .sidebar h2 img { float:left; display:inline; margin:0 3px 0 0; }
+#container.shoppingbag .sidebar .spacer { height:28px; border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1; width:210px; float:left; }
+#container.shoppingbag .sidebar .also_like { float:left; width:210px; border-bottom:1px solid #E1E1E1; height:130px; }
+#container.shoppingbag .sidebar .also_like ul { float:left; width:210px; }
+#container.shoppingbag .sidebar .also_like ul li { float:left; width:90px; display:inline; }
+#container.shoppingbag .sidebar .also_like ul li p { float:left; width:90px; display:inline; }
+#container.shoppingbag .sidebar .also_like ul li:first-child { margin-right:30px; }
+
+#container.shoppingbag .sidebar .help { float:left; display:inline; width:210px; background:#f4f4f4; padding:15px 0; position:relative; z-index:1; margin:20px 0; }
+#container.shoppingbag .sidebar .help .extra_side_top { position:absolute; top:0; left:0; height:10px; width:210px; background:url("background.png") 0 -224px no-repeat; }
+#container.shoppingbag .sidebar .help .extra_side_bottom { position:absolute; bottom:0; left:0; height:9px; width:210px; background:url("background.png") 0 -238px no-repeat; }
+
+#container.shoppingbag .sidebar .help h3 { font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; float:left; width:190px; padding:0 10px 0 20px; line-height:18px; float:left; background:url("shop.png") 0 -750px no-repeat; margin:0 0 10px 10px; }
+
+#container.shoppingbag .sidebar .help label { float:left; display:inline; width:190px; line-height:39px; font-size:13px; background:url("background.png") 0 -252px no-repeat; cursor:pointer; padding:0 10px; }
+#container.shoppingbag .sidebar .help label:hover { color:#707173; }
+#container.shoppingbag .sidebar .help label.close { background:url("background.png") 0 -295px no-repeat; height:30px; line-height:30px; }
+#container.shoppingbag .sidebar .help label .title { width:190px; line-height:39px; padding:0; float:left; display:inline; height:39px; }
+#container.shoppingbag .sidebar .help label.close .title { line-height:30px; height:30px;  }
+#container.shoppingbag .sidebar .help p { font-size:10px; float:left; width:190px; margin:5px 10px 10px 10px; }
+
+#container.shoppingbag .main h4 { float:left; display:inline; width:710px; padding:0; height:100px; background:#F4F4F4; }
+#container.shoppingbag .main h4 span { float:left; display:inline; width:600px; margin:30px; height:45px; background:url("labels.png") -110px -274px no-repeat; line-height:37px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; padding:0 0 0 50px; }
+
+
+
+/* CHECKOUT */
+#container.checkout .main { float:left; display:inline; width:950px; background:#fff; padding:0 0 100px 0; position:relative; z-index:1; }
+#container.checkout .main h1 { float:left; display:inline; width:950px; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px;
+ margin:3px 0 5px 0; }
+#container.checkout .main h1 span { color:#CCCCCC; } 
+
+#container.checkout .main .checkout_header { float:left; display:inline; width:950px; background:#fff; margin:0 0 25px 0; padding-bottom:30px;  border-bottom:1px solid #E1E1E1; }
+#container.checkout .main .checkout_header h3 {  font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; float:left; width:300px; height:34px; line-height:34px;  display:inline; border-top:1px solid #E1E1E1; border-bottom:1px solid #E1E1E1; margin:0 0 12px 0; }
+#container.checkout .main .checkout_header h3.middle { padding:0 25px; }
+#container.checkout .main .checkout_header .item {  float:left; display:inline; width:270px; padding:0 0 0 30px; min-height:84px; position:relative; }
+#container.checkout .main .checkout_header .item.middle {  float:left; display:inline; width:270px; padding:0 25px 0 55px;  }
+#container.checkout .main .checkout_header .item a.button {  float:left; display:inline; width:75px; height:23px; background:url("labels.png") 0 -621px no-repeat; line-height:20px; color:#FFF; padding:0 0 0 15px; font-size:12px; position:absolute; bottom:0; left:30px;  }
+#container.checkout .main .checkout_header .item a.button:hover { background:url("labels.png") 0 -650px no-repeat; }
+#container.checkout .main .checkout_header .item a.button:focus { background:url("labels.png") 0 -679px no-repeat; }
+#container.checkout .main .checkout_header .item a.button:active { background:url("labels.png") 0 -679px no-repeat; }
+
+#container.checkout .main .checkout_header .item.middle a.button { left:55px; }
+
+#container.checkout .main .checkout_header #spedizione .tit_box_no_indirizzo {color: red;}
+#container.checkout .main .checkout_header #fatturazione .tit_box_no_indirizzo {color: red;}
+
+
+#container.checkout .main h2 { float:left; display:inline; width:950px; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px;
+ margin:3px 0 20px 0; }
+#container.checkout .main h2 img { float:left; display:inline; margin:0 3px 0 0; }
+
+
+#container.checkout .main table { float:left; display:inline; margin:0 0 20px 0; }
+#container.checkout .main table th { height:30px; border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1; color:#9a9a9c; font-size:13px; font-weight:bold; }
+
+#container.checkout .main table td { border-bottom:1px solid #E1E1E1; }
+#container.checkout .main table tr.free_gift td { border-bottom:2px solid #ffdd00; border-top:2px solid #ffdd00; }
+#container.checkout .main table tr.free_gift td:first-child { border-left:2px solid #ffdd00; }
+#container.checkout .main table tr.free_gift td.last { border-right:2px solid #ffdd00; }
+#container.checkout .main table td.item_product img { float:left; display:inline; }
+#container.checkout .main table td.item_product span.title { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; line-height:19px; min-height:38px; float:left; display:inline; width:180px; }
+#container.checkout .main table td.item_product span.code { font-family:'AvantGardeGothicITCW01M 731087'; font-size:14px; color:#9a9a9c; line-height:19px; float:left; display:inline; width:180px; }
+#container.checkout .main table td.qty { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; }
+#container.checkout .main table td.price { font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; }
+#container.checkout .main table td.price.sale { text-decoration:line-through; }
+#container.checkout .main table td .discount { display:inline-block; width:40px; height:21px; line-height:21px; margin-top:1px; background:url("labels.png") -94px -61px no-repeat; color:#FFF; text-align:center;  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;  }
+
+#container.checkout .main table tr.total_shopping_bag td { height:60px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; }
+
+#container.checkout .main .payment_method { float:left; display:inline; background:#f4f4f4; width:230px; padding:20px; }
+#container.checkout .main .payment_method h4 { float:left; display:inline; font-family:'AvantGardeGothicITCW01D 731075'; font-size:16px; float:left; width:205px; padding:0 0 20px 25px; line-height:16px; background:url("shop.png") 0 -701px no-repeat; margin-bottom:25px; border-bottom:1px solid #E1E1E1; }
+#container.checkout .main .payment_method ul { float:left; width:230px; padding:0;  }
+#container.checkout .main .payment_method ul li { width:230px; padding:0 0 10px 0; margin:0 0 10px 0; border-bottom:1px solid #E1E1E1; float:left; }
+#container.checkout .main .payment_method ul li a.radio { float:left; display:inline; width:15px; height:15px; background:url("radio.png") 0 0; }
+#container.checkout .main .payment_method ul li a.radio:hover { background:url("radio.png") 0 -15px; }
+#container.checkout .main .payment_method ul li a.radio.selected { background:url("radio.png") 0 -30px; }
+#container.checkout .main .payment_method ul li a.radio.selected:hover { background:url("radio.png") 0 -30px; }
+#container.checkout .main .payment_method ul li div { float:right; display:inline; text-align:left; width:200px; }
+#container.checkout .main .payment_method ul li div img { float:left; clear:both; margin-bottom:10px; }
+#container.checkout .main .payment_method ul li div p { float:left; clear:both; width:200px; font-size:12px; font-weight:bold; line-height:22px; }
+#container.checkout .main .payment_method ul li div span { float:left; clear:both; width:200px; font-size:10px; line-height:12px; }
+
+
+
+#container.checkout .main .checkout_total { float:right; display:inline; width:660px; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; }
+#container.checkout .main .checkout_total .row { float:left; display:inline; width:660px; height:42px; line-height:42px; border-bottom:1px solid #E1E1E1; }
+#container.checkout .main .checkout_total .row p { float:left; display:inline; width:500px; line-height:42px; }
+#container.checkout .main .checkout_total .row span { float:right; text-align:right; display:inline; width:160px; line-height:42px; }
+#container.checkout .main .checkout_total .row.discount p { width:150px; float:left; }
+#container.checkout .main .checkout_total .row.discount form { width:350px; float:left; }
+#container.checkout .main .checkout_total .row.discount form input[type="text"]{ width:175px; padding:0 5px; height:21px; line-height:21px; background:url("form.png") 0 0; float:left; display:inline; margin:12px 5px 0 0; }
+#container.checkout .main .checkout_total .row.discount form a.button { width:120px; height:23px; line-height:23px; background:url("labels.png") 0 -741px no-repeat; float:left; display:inline; margin:10px 0 0 0; padding:0 0 0 8px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:12px; }
+#container.checkout .main .checkout_total .row.discount form a.button:hover {  background:url("labels.png") 0 -767px no-repeat; }
+#container.checkout .main .checkout_total .row.discount form a.button:focus {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+#container.checkout .main .checkout_total .row.discount form a.button:active {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+
+#container.checkout .main .checkout_total .no_indirizzo_per_country p.message { color: red; text-align: left; line-height: 50px;}
+#container.checkout .main .checkout_total .no_indirizzo_per_country p.message_details { text-align: left;}
+
+#container.checkout .main a.cta { float:right; display:inline; width:242px; height:38px; background:url("background.png") 0 -180px; text-align:center; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; line-height:38px; text-shadow: 0px 1px 0px #fff8d5; margin:20px 0 0 0; }
+#container.checkout .main a.cta:hover { background:url("background.png") 0 -530px; }
+#container.checkout .main a.cta:focus { background:url("background.png") 0 -570px; }
+#container.checkout .main a.cta:active { background:url("background.png") 0 -570px; }
+   
+/* Le Overlay */
+.overlay { }
+.overlay .close {	background-image:url("http://www.mandarinaduck.com/css/overlay/close.png"); position:absolute; right:5px; top:5px; cursor:pointer; height:35px; width:35px; }
+
+.overlay h3{  border-bottom: 1px solid #E1E1E1; border-top: 1px solid #E1E1E1; display: inline; float: left; font-family: 'AvantGardeGothicITCW01D 731075'; font-size: 16px;  height: 34px; line-height: 34px; margin: 0 0 20px; width: 320px; display:block; clear:both;}
+
+.overlay ul {float:left; display:inline;}
+
+.overlay .address {width:400px; float:left; clear:both; display:inline; margin-bottom:10px;}
+
+.overlay a.radio { height:15px; width:15px; background:url("radio.png") 0 -187px no-repeat; float:left; margin:2px 10px 0 0; }
+.overlay a.radio:hover { background:url("radio.png") 0 -150px no-repeat;  }
+.overlay a.radio.selected { background:url("radio.png") 0 -169px no-repeat;  }
+.overlay form input[type="text"]{ width:175px; padding:0 5px; height:21px; line-height:21px; background:url("form.png") 0 0; float:left; display:inline; margin:12px 5px 0 0; }
+.overlay form textarea { float:left; display:inline; width:300px; padding:10px; background:#f4f4f4; border:0; outline:none; text-align:left; margin:0 0 10px 0; resize: none; }
+.overlay form textarea.larger { width:100%;}
+
+/* LA FOTO DENTRO INVIA AD UN AMICO. EVENTUALMENTE DA CANCELLARE*/
+#content div.photo {float:left;}
+#container.shoppingbag .main table tr.choose_shipment td span.corriere_basket_discount {text-decoration:line-through; float:none; font-size:14px; font-family: 'AvantGardeGothicITCW01D 731075';}
+
+/* CUSTOMIZZIAMO GLI OVERLEAY*/
+#modifica_indirizzo, #modifica_fatturazione, #modifica_corriere {width:350px; height:150px;}
+img.waiting {position:absolute; top:100px; left:140px;}
+
+/* LO SLIDER GRANDE DELLA PAGINA DI LINEA*/
+.slider_hp_shop {display:none; }
+.slider_hp_shop .structure { position:relative; width:100%; overflow:hidden; }
+.slider_hp_shop .structure ul {width:3000px; float:left; padding-left:25px;}
+.slider_hp_shop .structure ul li { width:320px; float:left; display:inline; margin:50px 0 0 0; }
+
+.slider_hp_shop .structure ul li a {  }
+
+.slider_hp_shop .structure div.prev { width:64px; height:65px; right:10px; top:150px; z-index:100; position:absolute; background: url("../images/right.png") no-repeat;}
+.slider_hp_shop .structure div.next { width:64px; height:65px; left: 10px; top:150px; z-index:100; position:absolute; background: url("../images/left.png") no-repeat;}
+
+.slider_hp_shop .structure div.prev:hover{cursor:pointer;}
+.slider_hp_shop .structure div.next:hover{cursor:pointer;}
+
+/* CUSTOMIZZIAMO IL FILTRO SUL PREZZO */
+#container.listing .sidebar ul.filters li .price_slider a { float:left; display:inline; width:10px; height:10x; line-height:10px; background:url("labels.png") 0 -741px no-repeat; padding:0px; margin:0px; }
+#container.listing .sidebar ul.filters li .price_slider a:hover {  background:url("labels.png") 0 -767px no-repeat; }
+#container.listing .sidebar ul.filters li .price_slider a:focus {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+#container.listing .sidebar ul.filters li .price_slider a:active {  background:url("labels.png") 0 -794px no-repeat; color:#FFF; }
+
+
+#container.listing .sidebar ul.filters li .price_slider #min {float: left;}
+#container.listing .sidebar ul.filters li .price_slider #max {float: right;}
+
+/* invita un amico popup */
+#frm_invita_amico input { border:1px solid #E1E1E1; }
+#frm_invita_amico a.ui-state-default { width:77px; height:23px; background:url("labels.png") 0 -430px no-repeat; line-height:21px; text-align:center; display:inline-block; padding:0; }
+#frm_invita_amico a.ui-state-default:hover { background:url("labels.png") -0 -457px no-repeat; }
+#frm_invita_amico a.ui-state-default:focus { background:url("labels.png") -0 -484px no-repeat; }
+#frm_invita_amico a.ui-state-default:active { background:url("labels.png") -0 -484px no-repeat; }
+
+/**/
+#container.checkout form  input[type="text"] {background: url("form.png") repeat scroll 0 -48px transparent; display: inline; float: left; height: 21px; line-height: 21px; margin: 0; padding: 0 10px; width: 230px;}
+
+#container.checkout form input[type="text"] {background: url("form.png") repeat scroll 0 -96px transparent; width: 90px; margin:10px 20px 0 0;}
+
+
+#container.checkout .main .checkout_total .row.discount p.codice_sconto_desc {width: 240px;}
+
+#container.shoppingbag .main p.shop_closed {margin: 20px 0 0 0; color: red; }
+
+
+/* new */
+.top_categories { float:left; width:950px; margin:20px 0 80px 0; }
+.top_categories .item { float:left; display:inline; width:200px; margin:0 18px; }
+.top_categories .item img { width:200px; float:left; display:inline; margin:0 0 15px 0; }
+.top_categories .item a.button_categories { float:left; display:inline; width:140px; height:23px; line-height:22px; margin:0; text-align:center; font-size:11px; background:url("labels.png") 0 -400px no-repeat; margin:0 0 0 30px; }
+
+#container_new { width:950px; margin:0 auto 25px auto; position:relative; z-index:0; }
+#container_new .header_shop { float:left; display:inline; width:100%; margin:20px 0 30px 0; }
+#container_new .header_shop h1 { float:left; display:inline; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; width:100%; margin-bottom:5px; }
+#container_new .header_shop h1 img { float:left; display:inline; margin:4px 3px 0 0; }
+#container_new a.close_open_lines { float:right; display:inline; width:270px; height:23px; line-height:21px; margin:0; text-align:center; font-size:12px; background:url("label_linea.png") 0 0 no-repeat; padding:0 5px; }
+
+
+
+#container.homeshop .header_shop { float:left; display:inline; width:100%; margin:13px 0 23px 0; }
+#container.homeshop .header_shop h1 { float:left; display:inline; background:#fff; font-family:'AvantGardeGothicITCW01M 731087'; font-size:16px; }
+#container.homeshop .header_shop h1 img { float:left; display:inline; margin:4px 3px 0 0; }
+
+#container.homeshop .description_shop { float:left; display:inline; width:100%; margin:0 0 50px 0; }
+#container.homeshop .description_shop img.main_img { float:left; display:inline; width:350px;  }
+#container.homeshop .description_shop p { float:right; display:inline; text-align:left; width:550px; font-family:'AvantGardeGothicITCW01M 731087'; font-size:12px; line-height:22px; margin:0; }
+
+#container.homeshop .description_shop a.cta { float:right; display:inline; width:320px; height:38px; background:url("button_big.png") 0 0; text-align:center; font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; line-height:38px;
+text-shadow: 0px 1px 0px #fff8d5; color:#404D70; margin:25px 0 0 0; }
+#container.homeshop .description_shop a.cta:hover { background:url("button_big.png") 0 -40px; }
+
+
+
+/* carosello linea new */
+.jcarousel-list.jcarousel-list-horizontal img { opacity: 0.3; -moz-opacity: 0.3; }
+.jcarousel-list.jcarousel-list-horizontal img:hover { opacity:1.0; -moz-opacity: 1.0; }
+.jcarousel-list.jcarousel-list-horizontal img.active { opacity:1.0; -moz-opacity: 1.0; }
+ 

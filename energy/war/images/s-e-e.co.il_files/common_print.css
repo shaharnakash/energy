@@ -1,0 +1,164 @@
+/* CSS MD */ /*
+
+Grigio scuro  txt  #707173   testi e titoli e paragrafi default 
+Grigio chiaro txt  #9a9a9c   testi e titoli e paragrafi secondari
+Grigio molto chiaro txt #CCCCCC   testi: briciole di pane
+Giallo MD       #ffdd00   un po ovunque
+
+Grigio sfondo   #f4f4f4   sfondo sidebar
+Grigio bordi   #E1E1E1   bordi grigi
+
+*/
+
+/*
+This CSS resource incorporates links to font software which is
+the valuable copyrighted property of Monotype Imaging and/or
+its suppliers. You may not attempt to copy, install, redistribute, convert,
+modify or reverse engineer this font software. Please contact Monotype Imaging
+with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+@import url("https://fast.fonts.com/t/1.css?apiType=css&projectid=011e389f-33e0-4aed-a8ae-2b76ada5ffdd");
+@font-face{
+font-family:"AvantGardeGothicITCW01D 731075";
+src:url("font/b74e5f86-4477-435a-abdf-32d8215f21bc-iefix.eot") format("eot");}
+@font-face{
+font-family:"AvantGardeGothicITCW01D 731075";
+src:url("font/b74e5f86-4477-435a-abdf-32d8215f21bc-iefix.eot");
+src:url("font/c18aee57-7585-4a8b-9a1c-69d226301d73.woff") format("woff"),url("font/44ccbb2b-0fbc-4d95-b1da-0aa73bd26fb0.ttf") format("truetype"),url("font/f2de529c-11d2-43b7-be7c-05c5aaeaf133.svg#f2de529c-11d2-43b7-be7c-05c5aaeaf133") format("svg");
+}
+@font-face{
+font-family:"AvantGardeGothicITCW01M 731087";
+src:url("font/5daf8f81-4f5b-4b44-8fd3-91c56d20e799-iefix.eot") format("eot");}
+@font-face{
+font-family:"AvantGardeGothicITCW01M 731087";
+src:url("font/5daf8f81-4f5b-4b44-8fd3-91c56d20e799-iefix.eot");
+src:url("font/43b723ac-a6f2-4d5d-9d72-c50aea85ecee.woff") format("woff"),url("font/9093e944-c2da-4954-953f-ca2eb3a227dd.ttf") format("truetype"),url("font/e3929a31-b148-4180-91be-4b490bdac87d.svg#e3929a31-b148-4180-91be-4b490bdac87d") format("svg");
+}
+
+
+body { 
+ background:#FFFFFF;
+ color:#707173;
+ font-size: 12px;
+ margin:0; 
+ padding:0;
+ z-index:0; 
+ font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ word-spacing: normal;
+ text-align: left;
+ letter-spacing: 0; 
+ position:relative;
+}
+
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0; font-weight: normal;  }
+
+ul { list-style-type:none; margin:0; padding:0; }
+form { margin:0; padding:0;}
+input,textarea,select { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; outline:none; font-size:11px; color:#707173; }
+input,textarea:focus { outline:none; }
+input[type="text"],input[type="password"] { border:none; }
+input[type="submit"] { border:0; background:#FFFFFF; cursor:pointer; outline:none; }
+input[type="submit"]::-moz-focus-inner { border: 0; }
+fieldset { border:0; padding:0; margin:0; }
+.clear { clear:both;}  .left { float:left;}  .right { float:right;} 
+legend.error { color: red; float: left;}
+a { text-decoration:none; color:#707173; outline:none; }
+a:hover { text-decoration:none; color:#707173;}
+a:active, a:focus { outline:none; }
+a img { border:0; outline:none; }
+blockquote { margin:0; padding:0;} 
+p { margin:0; padding:0; line-height:15px; } 
+p a { color:#707173; text-decoration:none; } 
+p a:hover { color:#707173; text-decoration:underline; } 
+img, img:active, img:focus { outline:none; }
+
+.focus { color:#ffdd00;}
+
+/* Struttura */
+
+/* HEADER */
+#header { width:800px; margin:0 auto; position:relative; z-index:1; }
+
+/* Logo */
+#header #logo { width:360px; height:90px; float:left; display:inline; }
+
+/* Login in header top dx */
+#header #login_header { display:none; }
+
+/* Menu lingua header top */
+#header #language { display:none; }
+
+/* Menu paese header top */
+#header #country { display:none; }
+
+
+/* Shopping Bag Header */
+#header .your_shopping_bag { display:none; }
+
+/* MENU DI NAVIGAZIONE PRINCIPALE */
+#navigation { float:left; width:710px; height:37px; clear:both; padding:0; line-height:37px; background:#ffdd00!important; border-bottom:1px solid #E1E1E1; }
+#navigation .extrasx { display:none; }
+#navigation .extradx { display:none; }
+#navigation ul {  font-family:'AvantGardeGothicITCW01D 731075'; font-size:14px; height:37px; float:left; display:inline;  }
+#navigation ul li { float:left; display:inline; position:relative; }
+#navigation ul li a { padding:0 12px; color:#9a9a9c; 
+text-shadow: 0px 1px 0px #fff8d5;
+/*filter: dropshadow(color=#fff8d5, offx=0, offy=1); */
+float:left; line-height:37px; 
+ }
+
+#navigation ul li a:hover { background:url("backgrounds.png") 0 -270px repeat-x; }
+#navigation ul li a:focus { background:url("backgrounds.png") 0 -310px repeat-x; }
+#navigation ul li a:active { background:url("backgrounds.png") 0 -310px repeat-x; }
+
+#navigation ul li:first-child a{  }
+#navigation ul li a:hover { color:#707173; }
+#navigation ul li.selected a { color:#707173; }
+
+#navigation ul li ul { position:absolute; top:37px; left:-12px; width:164px; height:145px; background:url("submenu.png") no-repeat 0 0; padding:30px 25px 25px 25px;  display:none; z-index:999; }
+#navigation ul li ul li { float:left; width:180px; margin:0; padding:0; line-height:20px; font-size:12px;  font-family:'AvantGardeGothicITCW01M 731087'; }
+#navigation ul li ul li.focus { margin-top:12px; }
+#navigation ul li ul li.focus a { color:#9a9a9c; }
+#navigation ul li ul li a { color:#707173; text-shadow:none; line-height:20px; background:none; padding-left:0; }
+#navigation ul li ul li a:hover, #navigation ul li ul li a:focus, #navigation ul li ul li a:active { background:none; }
+
+
+/* SEARCH TOP */
+#navigation #search {display:none; }
+
+
+/* FOOTER */
+#footer { display:none;}
+
+/* FOOTER */
+#credits { width:800px; margin:0 auto; border-top:1px solid #E1E1E1 }
+#credits .structure { width:710px; margin:0; position:relative; height:42px; background:#f4f4f4; }
+#credits .structure p { line-height:42px; font-size:11px; float:left; display:inline; margin:0 20px; }
+#credits .structure img { position:absolute; z-index:99; left:345px; top:8px; }
+
+
+/* CONTAINER */
+#container { width:800px; margin:13px auto 25px auto; position:relative; z-index:0; }
+
+
+/* LOADER AJAX  */
+div.ajax_loader {
+    display: none;
+    background:url('loading_MD100X100.gif') no-repeat center;
+    height:100px;
+    width: 100px;
+}
+
+div.ajax_loader_big {
+    
+    background: url("loader/loading_MD250X250.gif") no-repeat scroll center center transparent;
+    display: none;
+    height: 500px;
+    margin-left: 100px;
+    position: absolute;
+    width: 500px;
+}
+
+
+
